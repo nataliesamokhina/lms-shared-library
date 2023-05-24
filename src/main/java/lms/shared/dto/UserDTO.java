@@ -17,7 +17,7 @@ public class UserDTO extends BaseDTO<Long> {
     @NotBlank(message = "Username is mandatory")
     private String username;
 
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+//     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @NotBlank(message = "Password is mandatory")
     @Size(min = 8, message = "Password must be at least 8 characters")
     private String password;
